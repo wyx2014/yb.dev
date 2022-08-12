@@ -1,0 +1,218 @@
+baseURL = "https://www.bmpi.dev"
+title = "Tech assisted business"
+theme = "hugo-coder"
+languagecode = "zh-cn"
+defaultcontentlanguage = "zh-cn"
+
+enableRobotsTXT = true
+canonifyURLs = true
+
+enableGitInfo = true
+enableEmoji = true
+
+paginate = 9999
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = false
+pluralizelisttitles = false
+
+FootnoteReturnLinkContents = "↑"
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[outputs]
+  page     = ["HTML", "AMP"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+  taxonomyTerm = ["HTML"]
+  taxonomy = ["HTML"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[params]
+    author = "yb Wang"
+    info1 = "📚"
+    info1Tooltip = "Lifelong Learner"
+    info2 = "👨‍💻"
+    info2Tooltip = "Full-Stack Developer"
+    info3 = "💴"
+    info3Tooltip = "Passive Income"
+    description = "Maintain curiosity and desire to explore"
+    keywords = "life,dev,trade,passive income,money,developer,Self-management,IT technology,investment transactions"
+    avatarurl = "images/avatar/wangyb1.jpg"
+    logoImg = "images/avatar/wangyb1.jpg"
+    header = "BMPI.dev"
+
+    twitter = ""
+    github = ""
+    telegram = ""
+    zhihu = ""
+
+    favicon_root_path = "images/avatar/wangyb1.jpg"
+
+    # footercontent = "self/dev/money"
+
+    hidecredits = true
+    hidecopyright = false
+
+    series = true
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    math = true
+    custom_css = ["/css/main.css"]
+    custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
+
+    dateFormat = "2006-01-02"
+
+    # AMP
+    amp = true
+    ampElements = ["amp-ad","amp-analytics"]
+    themeColor = "#000000"
+    adsensePublisher = "ca-pub-1886683614725279"
+    googleAnalytics = "UA-154678195-1"
+
+    # OG
+    og_image = "images/avatar/wangyb1.jpg"
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/wyx2014"
+[[params.social]]
+    name = "YouTube"
+    icon = "fab fa-youtube"
+    weight = 2
+    url = ""    
+[[params.social]]
+    name = "Telegram"
+    icon = "fab fa-telegram"
+    weight = 3
+    url = ""
+[[params.social]]
+    name = "WeChat"
+    icon = "fab fa-weixin"
+    weight = 4
+    url = ""
+[[params.social]]
+    name = "ZhiHu"
+    icon = "fab fa-zhihu"
+    weight = 5
+    url = ""
+[[params.social]]
+    name = "DouYin"
+    icon = "fas fa-envelope"
+    weight = 6
+    url = ""
+[[params.social]]
+    name = "RSS"
+    icon = "fas fa-rss"
+    weight = 7
+    url = "index.xml"
+[[params.social]]
+    name = "Dev.to"
+    icon = "fas fa-dev-to"
+    weight = 8
+    url = ""
+[[params.social]]
+    name = "即刻"
+    icon = "far fa-jk"
+    weight = 9
+    url = ""
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1
+                url = "/about/"
+            [[languages.en.menu.main]]
+                name = "Self"
+                weight = 2
+                url  = "/self/"
+            [[languages.en.menu.main]]
+                name = "Dev"
+                weight = 3
+                url  = "/dev/"
+            [[languages.en.menu.main]]
+                name = "Money"
+                weight = 4
+                url  = "/money/"
+            [[languages.en.menu.main]]
+                name = "Project"
+                weight = 5
+                url  = "/project/"
+            [[languages.en.menu.main]]
+                name = "Goal"
+                weight = 6
+                url  = "/goal/"
+            [[languages.en.menu.main]]
+                name = "Twitter"
+                weight = 7
+                url  = "ttps://twitter.com/J9GyNPpfmd8NUrB"
+
+    [languages.zh-cn]
+        languagename = "Chinese"
+        title = "技术助力业务"
+
+        [languages.zh-cn.params]
+            author = "空想家"
+            info1 = "📚"
+            info1Tooltip = "终身学习"
+            info2 = "👨‍💻"
+            info2Tooltip = "全栈技术"
+            info3 = "💴"
+            info3Tooltip = "被动收入"
+            description = "保持好奇心和探索欲望，每天都会有新的可能性"
+            # footercontent = "self/dev/money"
+
+        [languages.zh-cn.menu]
+            [[languages.zh-cn.menu.main]]
+                name = "Twitter"
+                weight = 1
+                url  = "https://twitter.com/J9GyNPpfmd8NUrB"
+            [[languages.zh-cn.menu.main]]
+                name = "关于"
+                weight = 2
+                url = "/about/"
+            [[languages.zh-cn.menu.main]]
+                name = "学习"
+                weight = 3
+                url  = "/self/"
+            [[languages.zh-cn.menu.main]]
+                name = "技术"
+                weight = 4
+                url  = "/dev/"
+            [[languages.zh-cn.menu.main]]
+                name = "投资"
+                weight = 5
+                url  = "/money/"
+            [[languages.zh-cn.menu.main]]
+                name = "个人项目"
+                weight = 6
+                url  = "/project/"
+            [[languages.zh-cn.menu.main]]
+                name = "长期目标"
+                weight = 7
+                url  = "/goal/"
