@@ -1,4 +1,4 @@
-baseURL = "https://www.bmpi.dev"
+baseURL = "https://venerable-tiramisu-d9881e.netlify.app"
 title = "Tech assisted business"
 theme = "hugo-coder"
 languagecode = "zh-cn"
